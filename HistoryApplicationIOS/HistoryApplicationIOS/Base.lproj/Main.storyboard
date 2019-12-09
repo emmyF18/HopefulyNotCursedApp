@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xh9-TB-sFC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="HistoryApplicationIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Iowa History Center" translatesAutoresizingMaskIntoConstraints="NO" id="UiH-fB-sHv">
+                                <rect key="frame" x="89" y="312" width="237" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeA-SR-3ot">
+                                <rect key="frame" x="32" y="112" width="350" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next Page" image="Simpson Logo">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wr6-2G-6yo">
+                                <rect key="frame" x="55" y="463" width="129" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="map-search"/>
+                                <connections>
+                                    <segue destination="4qq-ug-wJX" kind="show" id="O92-K9-p0T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3I-Ye-WPY">
+                                <rect key="frame" x="218" y="463" width="129" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="view-list"/>
+                                <connections>
+                                    <segue destination="qlb-La-RYF" kind="show" id="mKt-GR-qBB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FG-ai-4Ne">
+                                <rect key="frame" x="220" y="620" width="116" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="help-circle"/>
+                                <connections>
+                                    <segue destination="JJK-fV-RF5" kind="show" id="fbX-0N-rBB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHk-yc-Tlr">
+                                <rect key="frame" x="59" y="620" width="121" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="information"/>
+                                <connections>
+                                    <segue destination="7PW-Wk-1Rq" kind="show" id="9EL-Z2-adY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="9Z1-fR-sWP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0V8-Pm-SZy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZgG-Kr-mgp">
+                    <connections>
+                        <action selector="imageClicked:" destination="BYZ-38-t0r" id="Qod-D4-IYq"/>
+                        <segue destination="qlb-La-RYF" kind="show" id="vu7-iq-3Fr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0a9-kE-Fij"/>
+                <tapGestureRecognizer id="1RY-BZ-bpD"/>
+                <tapGestureRecognizer id="VRX-Po-opq"/>
+            </objects>
+            <point key="canvasLocation" x="1431.8840579710145" y="126.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tu5-gj-usT">
+            <objects>
+                <viewController id="7PW-Wk-1Rq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bEb-ng-4fM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creators of the App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xle-kP-aKK">
+                                <rect key="frame" x="55" y="279" width="195" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sponsers of the App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3x-Nq-RMa">
+                                <rect key="frame" x="54" y="670" width="195" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Samuel Adeniyi : Application Developer" translatesAutoresizingMaskIntoConstraints="NO" id="egJ-r5-5dL">
+                                <rect key="frame" x="82" y="321" width="278" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Genevieve Block : Application Developer" translatesAutoresizingMaskIntoConstraints="NO" id="Z3V-DH-VdQ">
+                                <rect key="frame" x="82" y="345" width="278" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Emmy Farrell : Application Developer" translatesAutoresizingMaskIntoConstraints="NO" id="rk6-1q-dcZ">
+                                <rect key="frame" x="85" y="374" width="309" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Nick, Dunn : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="3yP-hd-Yf8">
+                                <rect key="frame" x="82" y="407" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Aiden, BPAC : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="ucT-sv-mL7">
+                                <rect key="frame" x="82" y="432" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Allie, Lekberg : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="Zzt-x6-1my">
+                                <rect key="frame" x="82" y="458" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Kennedi, Smith : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="tFn-aE-HbN">
+                                <rect key="frame" x="82" y="485" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Laura, Carver : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="VPc-qb-dhF">
+                                <rect key="frame" x="82" y="512" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Noah, Mary Berry : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="4g6-SD-aDT">
+                                <rect key="frame" x="82" y="538" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Abby, Wallace : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="0YB-79-Lnq">
+                                <rect key="frame" x="82" y="564" width="258" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Elliot, Pfieffer : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="RrV-pe-wRg">
+                                <rect key="frame" x="82" y="589" width="258" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Rachel, Hopper : Content Writer" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-gc-esv">
+                                <rect key="frame" x="82" y="644" width="258" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Iowa History Center " translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-9S-LQk">
+                                <rect key="frame" x="82" y="708" width="167" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rO-mj-7ZN">
+                                <rect key="frame" x="85" y="733" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Iowa History Center Website"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Simpson College" translatesAutoresizingMaskIntoConstraints="NO" id="Nnv-7t-uKW">
+                                <rect key="frame" x="82" y="771" width="167" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78O-3f-8jd">
+                                <rect key="frame" x="85" y="798" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Simpson College Admisisons Website"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info_picture.png" translatesAutoresizingMaskIntoConstraints="NO" id="yLJ-F2-vGb">
+                                <rect key="frame" x="-43" y="88" width="479" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fr-yR-gYg">
+                                <rect key="frame" x="105" y="240" width="195" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Mcz-Lm-BT2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gmb-kU-oxK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXe-Ps-ARz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.73913043478262" y="839.73214285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zfl-yI-2GX">
+            <objects>
+                <viewController id="JJK-fV-RF5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72b-FS-wc8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The Help button goes to the Help Page, which explains buttons to users." translatesAutoresizingMaskIntoConstraints="NO" id="JYK-7K-ZXQ">
+                                <rect key="frame" x="154" y="331" width="240" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The Information button goes to the Information Page, which displays the creators of the application.  " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NPd-Td-edf">
+                                <rect key="frame" x="154" y="445" width="240" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The List button goes to the Building List page, which displays the buildings at Simpson. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-3F-BdN">
+                                <rect key="frame" x="154" y="560" width="240" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The Map button goes to the GPS map that shows the users Simpson College. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dxR-t3-sH4">
+                                <rect key="frame" x="154" y="672" width="240" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAk-jk-rQy">
+                                <rect key="frame" x="110" y="229" width="195" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Icon Directory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-2Z-irj">
+                                <rect key="frame" x="110" y="257" width="195" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info_picture.png" translatesAutoresizingMaskIntoConstraints="NO" id="fzM-cU-LXP">
+                                <rect key="frame" x="0.0" y="76" width="414" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="help-circle" translatesAutoresizingMaskIntoConstraints="NO" id="yGc-vb-ejS">
+                                <rect key="frame" x="20" y="317" width="102" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="information" translatesAutoresizingMaskIntoConstraints="NO" id="Vvy-xn-IvR">
+                                <rect key="frame" x="20" y="441" width="102" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="view-list" translatesAutoresizingMaskIntoConstraints="NO" id="0yn-kd-Wzf">
+                                <rect key="frame" x="20" y="560" width="102" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5A-Nv-YR3">
+                                <rect key="frame" x="30" y="441" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map-search" translatesAutoresizingMaskIntoConstraints="NO" id="SIE-li-Hb2">
+                                <rect key="frame" x="20" y="672" width="102" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rY7-0F-0ZZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IdX-Of-Kwt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXJ-3U-2vQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.72463768115949" y="844.41964285714278"/>
+        </scene>
+        <!--Building List View Controller-->
+        <scene sceneID="fGT-QQ-HmA">
+            <objects>
+                <viewController id="qlb-La-RYF" customClass="BuildingListViewController" customModule="HistoryApplicationIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mvr-QJ-3NV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="il8-1d-Qlf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="878"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5g-XG-L8n">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n30-q9-Plz">
+                                                <rect key="frame" x="81" y="8" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Wallace Hall ">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Cy5-4F-ulH" kind="show" id="Pvk-cl-s75"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cG-K8-QAH">
+                                                <rect key="frame" x="81" y="68" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Buxton Stadium">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="tJG-Tj-MRa" kind="show" id="OoA-Pe-Hr5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sje-L6-BdL">
+                                                <rect key="frame" x="81" y="188" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="College Hall">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="eZQ-UV-DC1" kind="show" id="mQR-9j-Smc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyK-Ak-iNC">
+                                                <rect key="frame" x="81" y="308" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Dunn Library">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="weB-uR-cbt" kind="show" id="pjG-6n-bec"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz5-86-okP">
+                                                <rect key="frame" x="81" y="368" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Hillman Hall">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Dc2-l9-frK" kind="show" id="3wY-K3-hLd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meB-0q-GJs">
+                                                <rect key="frame" x="81" y="488" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Kent Campus Center">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Ewy-Ec-dnC" kind="show" id="AHl-BJ-MZT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFP-wQ-FUr">
+                                                <rect key="frame" x="81" y="548" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Mary Berry Hall">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="N6M-zC-MmB" kind="show" id="suR-RG-RYU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjF-K0-fEj">
+                                                <rect key="frame" x="81" y="608" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="McNeill Hall">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="KiB-JP-nZr" kind="show" id="u7i-XJ-oKb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc7-lw-wJY">
+                                                <rect key="frame" x="81" y="668" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Pfieffer/Great Hall">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="uzD-gF-AT1" kind="show" id="oj5-hg-tDX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSr-sQ-tJ3">
+                                                <rect key="frame" x="81" y="428" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Hopper Gym">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Ltr-S1-7pt" kind="show" id="6rK-Rc-lMB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2F-cI-C11">
+                                                <rect key="frame" x="81" y="248" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Cowles Gym">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Wj2-Tc-miD" kind="show" id="tgw-Ql-15u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-vp-07y">
+                                                <rect key="frame" x="81" y="128" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Carver Hall">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="yXQ-Yg-KoH" kind="show" id="R3r-kN-CZS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atB-1R-Pc8">
+                                                <rect key="frame" x="81" y="728" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Smith Chapel">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="j6W-1E-t9d" kind="show" id="p86-kT-xf3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkc-PF-oMM">
+                                                <rect key="frame" x="81" y="788" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Blank Performing Arts Center">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="lHH-ju-meR" kind="show" id="ets-ay-I5D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-rX-z62">
+                                                <rect key="frame" x="81" y="848" width="252" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Amy Robertson Music Center">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="ho7-1w-J7f" kind="show" id="yeg-Kf-Aqn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.58308273553848267" green="0.093061663210391998" blue="0.14882925152778625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="oaM-WW-aSQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58308273553848267" green="0.093061663210391998" blue="0.14882925152778625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="h5g-XG-L8n" firstAttribute="top" secondItem="il8-1d-Qlf" secondAttribute="top" id="FUy-Lb-87p"/>
+                                    <constraint firstAttribute="bottom" secondItem="h5g-XG-L8n" secondAttribute="bottom" id="SDg-WA-xQM"/>
+                                    <constraint firstAttribute="trailing" secondItem="h5g-XG-L8n" secondAttribute="trailing" id="VtO-4f-dBg"/>
+                                    <constraint firstItem="h5g-XG-L8n" firstAttribute="leading" secondItem="il8-1d-Qlf" secondAttribute="leading" id="pKi-1X-FVF"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="il8-1d-Qlf" firstAttribute="top" secondItem="fGG-hS-ZqH" secondAttribute="top" id="9dc-uB-mpD"/>
+                            <constraint firstItem="il8-1d-Qlf" firstAttribute="leading" secondItem="fGG-hS-ZqH" secondAttribute="leading" id="GWM-wS-8qB"/>
+                            <constraint firstItem="fGG-hS-ZqH" firstAttribute="bottom" secondItem="il8-1d-Qlf" secondAttribute="bottom" id="SPs-8g-hI5"/>
+                            <constraint firstItem="fGG-hS-ZqH" firstAttribute="trailing" secondItem="il8-1d-Qlf" secondAttribute="trailing" id="aw0-LK-B1B"/>
+                            <constraint firstItem="h5g-XG-L8n" firstAttribute="width" secondItem="mvr-QJ-3NV" secondAttribute="width" id="wBw-11-wLI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fGG-hS-ZqH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J4W-cj-PJF"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLn-FH-x11" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517.3913043478265" y="127.23214285714285"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="rVy-HS-EnX">
+            <objects>
+                <viewController id="4qq-ug-wJX" customClass="MapViewController" customModule="HistoryApplicationIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ang-lC-ent" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uVB-M8-bY2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rgZ-MD-Okf"/>
+                    <connections>
+                        <outlet property="mapView" destination="ang-lC-ent" id="uiR-Zd-xm9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MkG-Ym-vSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3754" y="141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eza-Vh-Loc">
+            <objects>
+                <viewController id="N6M-zC-MmB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9MN-Tf-CCq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marry Berry Hall " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4m-Lr-1vi">
+                                <rect key="frame" x="87" y="134" width="240" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hJA-WX-n3E">
+                                <rect key="frame" x="42" y="334" width="331" height="417"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Mary Berry Hall, originally named Ladies Hall, was built in 1891 and served as the female dormitory until 1967. Mary Berry Hall is named after the daughter of former Simpson President Thomas S. Berry. Mary, while attending Simpson, died due to complications after a surgery for appendicitis. She left half of her estate to the college, which came to a total of $3,622.12 in 1902 which translates to $105,760.36 in 2019 dollars. Currently, Mary Berry Hall is the home for the English, History, Philosophy, Political Science, Psychology, Religion and World Language Departments. The building features a variety of classrooms and offices for professors. Mary Berry Hall is also the home of the Farnham Art Gallery and the Iowa History Center.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MerryBerry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MG9-ai-31k">
+                                <rect key="frame" x="87" y="198" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rnO-r4-aTe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y1q-sB-6Bo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYB-XE-jkm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620.289855072464" y="-1889.0625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YcA-k2-h4o">
+            <objects>
+                <viewController id="uzD-gF-AT1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIl-xe-TWg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pfeiffer &amp; Great Hall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-N1-sp9">
+                                <rect key="frame" x="64" y="144" width="286" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pfeiffer.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eO9-cf-GXG">
+                                <rect key="frame" x="87" y="193" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jOu-sS-Huc">
+                                <rect key="frame" x="31" y="329" width="352" height="351"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Pfeiffer Dining Hall and the Great Hall were built in 1954 and dedicated in 1955. Named after Gustavus A. Pfeiffer, this building was created to house the dining center for campus as well as a multi-purpose room and was initially referred to as a student union. The cost of building this two-story student union was approximately $265,000. The building was renovated in 1973, 1976, following the outbreak of a fire, and finally in 2001. Great Hall has served as a student lounge for dances, convocations, lectures, recitals, concerts and banquets, while Pfeiffer continues to house the food buffet open to students during mealtimes.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dK1-X3-RFb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="50R-DL-mkp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhI-mB-Ev9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310.144927536232" y="-1887.0535714285713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cHT-lE-sb4">
+            <objects>
+                <viewController id="Wj2-Tc-miD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lAP-vG-LFg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cowles Gym" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyN-xL-kCT">
+                                <rect key="frame" x="115" y="150" width="185" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-kX-L9N">
+                                <rect key="frame" x="45" y="335" width="324" height="468"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Carse Hall and Cowles Fieldhouse are Simpson College’s primary locations for athletics. Carse comprises the hall that connects the Kent Campus Center to both Hopper Gymnasium and the Cowles Fieldhouse. Cowles Fieldhouse was built in the mid-1970s and was named after the Cowles Foundation. The Carse building was constructed when Kent Campus Center was and houses the weight, fitness, and wrestling rooms, two racquetball courts, and a dance studio. Cowles Fieldhouse is home to an indoor running facility, and the court used by our basketball and volleyball teams. The size of the gym also lends itself to use for large events, such as graduation, on campus. The location of these buildings near the center of campus set them up to make it easy for students to attend home games and utilize the state-of-the-art facilities that they house.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cowles.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-Ce-qBw">
+                                <rect key="frame" x="87" y="199" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="h6x-cD-Ix8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gBh-xw-85n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57i-Fg-GT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2976.811594202899" y="-1887.0535714285713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qlb-Gh-wHb">
+            <objects>
+                <viewController id="eZQ-UV-DC1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhU-KU-bRk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="College Hall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phq-Me-Zuh">
+                                <rect key="frame" x="120" y="142" width="175" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aRn-lU-QU1">
+                                <rect key="frame" x="56" y="327" width="302" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The buildings construction was completed in 1870. The building was initially home to the College’s classes. College Hall also used to serve as the school’s chapel. College Hall is currently home to both the Admissions and Financial aid offices. The building holds the Matthew Simpson room, which gets its name from the school’s original minister and Founder. A girl named Millie fell to her death in the building after tripping over her dress and her spirit still resides there.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="College Hall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="P2e-9v-79f">
+                                <rect key="frame" x="87" y="191" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Id0-gT-zhR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VGI-4U-ekI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guK-eI-oEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3639.130434782609" y="-1888.3928571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j5e-QN-Rhe">
+            <objects>
+                <viewController id="j6W-1E-t9d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fEV-7M-BEK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smith Chapel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7m-RH-L20">
+                                <rect key="frame" x="109" y="135" width="197" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smith Chapel.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="YUa-Za-9g3">
+                                <rect key="frame" x="87" y="184" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c3V-BM-3JR">
+                                <rect key="frame" x="32" y="320" width="351" height="601"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The Smith Chapel is the focal point for all religious activities on Simpson College’s campus. The idea of Smith Chapel started in the early days of Dr. Kersetter’s time as president in 1953. Kresetter found donors for the project, Alida and David O. Smith. The architect Arland Dirlam made construction plans, but the Smiths not satisfied, sought something different. Another donor, Robert A. MacBain, left Simpson $425,000 upon his death. The Smiths compromised on plans; construction thus began. The dedication in October of 1968 of the Smith Memorial Chapel marked the culmination of one of the longest building projects in the history of the college. After years, David O. Smith and his sister Alida Smith were finally able to dedicate the chapel in memory of their parents, Mrs. Annie Catherine Smith and Henry Gardner Smith. The chapel contains a mobile pipe organ, one of seven in the world, that can be played through the carillon in the bell tower and provide music for the entire campus. The Smith Chapel is used for interfaith campus worship, Madrigal Choir concerts and Honors Convocation among other events.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4Q0-ls-KlP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tiE-T6-c8E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9S-Fz-bTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4279.7101449275369" y="-1881.0267857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4QQ-4m-yaZ">
+            <objects>
+                <viewController id="Ltr-S1-7pt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qaJ-E4-bEk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hopper Gym" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cM-yh-8mt">
+                                <rect key="frame" x="114" y="140" width="186" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hillman.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jih-AZ-oCg">
+                                <rect key="frame" x="87" y="189" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xiS-Z5-98x">
+                                <rect key="frame" x="20" y="325" width="374" height="485"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Harry E. Hopper was Chairman of Simpson’s Board of Trustees and an earlier Simpson College graduate in the class of 1893. As a Simpson alumni, Hopper knew that the college was in need of a proper gymnasium, as the two small male and female gymnasiums were deteriorating fast. Therefore, he approached William H. Berry with his proposal of building for the College out of his own pocket, the best gymnasium in the Midwest. The project was completed in 1913 and cost around $100,000 to finish, with the whole of that amount coming from Hopper’s personal fortune. Hopper Gymnasium was considered a massive structure at the time, and when completed, the building was considered one of the finest in the state. Inside the building, it contained a rectangular room filled by a basketball court., with various other facilities being contained in the basement. Aside from a variety of athletic uses, Hopper was used for many years for commencement exercises and class registration, along with many other activities. However, by the 1970s, Hopper had become obsolete for many Simpson activities. The building itself is still sound and continues to be used for various athletic practices and intramurals. However, with the building of Cowles Athletic Center, Hopper has become reduced to being used as a supplement to this newer and more up-to-date facility.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mEs-fX-izJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AZc-vG-gGK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtL-AZ-rUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615.9420289855075" y="-1237.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zKk-50-yT3">
+            <objects>
+                <viewController id="KiB-JP-nZr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fnj-A7-02c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="McNeil Hall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKL-c1-VfU">
+                                <rect key="frame" x="124" y="152" width="166" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mcneill.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-4C-7cQ">
+                                <rect key="frame" x="87" y="201" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lX5-YB-zad">
+                                <rect key="frame" x="59" y="337" width="297" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The Henry H. and Thomas H. McNeill Business and Computer Science Center was built in 1985. Simpson College was given a generous donation of almost 2 million dollars by Lettie Judkins McNeill, who was a graduate of the class of 1927. The building was named after her late husband, Henry, and his twin brother, Thomas. This building is home to computer science programs, economics, and business. In 2012, a beautiful addition was added to the front of McNeill called McNeill Plaza. This new addition cost around $75,000 but really helped to make McNeill Hall one of the most beautiful sites on campus.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="m7g-pc-1on"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0p7-ot-aN7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jn-KY-Li1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298.5507246376815" y="-1235.4910714285713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dEW-Ha-lKB">
+            <objects>
+                <viewController id="Cy5-4F-ulH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m25-M1-xDS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wallace Hall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWc-Uv-9Af">
+                                <rect key="frame" x="118" y="152" width="178" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nce-xs-O4P">
+                                <rect key="frame" x="30" y="337" width="354" height="468"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Originally housing music, laboratories, a library, and an art studio, Wallace Hall is now home to the Education and Sociology Departments. Dedicated in 1889 as Science Hall, the building looked much like it does today in the tall and box-like shape, with a skylight in the original. This building shows the support of the community because it was originally built with bricks donated by a local businessman, J. H. Carruthers. However, in between 1889 and now, it underwent renovations in 1965 and again in 1996. The 1965 renovations completely restored the state of Wallace Hall after it had fallen into disrepair. Wallace Hall is named after Henry A. Wallace, former Vice President of the United States, husband of a Simpson alumna and brother to a Simpson Board of Trustees member. As of 1991, Wallace Hall also holds a place on the National Register of Historical Places.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wallace.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Sn-rs-NgN">
+                                <rect key="frame" x="87" y="201" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GpM-ZQ-S4q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ewN-MY-VDW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ynf-Ct-s4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966.666666666667" y="-1237.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8ia-OO-dNJ">
+            <objects>
+                <viewController id="Ewy-Ec-dnC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oWh-hE-rvB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kent Campus Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8n5-Ig-6hg">
+                                <rect key="frame" x="58" y="152" width="303" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kent.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Axb-6z-pUs">
+                                <rect key="frame" x="34" y="129" width="347" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-de-CAN">
+                                <rect key="frame" x="64" y="331" width="317" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Kent Campus Center was opened in 2012, replacing the Brenton Student Center. With restaurants, such as Au Bon Pain, Millie’s’ Coffee Shop, Red Mango, and Tyler’s Grille, and lounge furniture, Kent Campus Center offers different opportunities for students to relax during the school year. The Kent Campus Center is named after James H. Kent, who along with contributions from his family donated $4 million towards a new student center. The Black Box Theatre and Hubbell Hall host multiple speakers and receptions. In addition, Kent Campus Center is the home to a conglomerate of resources for students including Student Government Association, security and health services.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="FGr-GI-4Wd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vO2-9N-Cbd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZw-Iy-Tcb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3621.739130434783" y="-1233.4821428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wBd-Bl-Oag">
+            <objects>
+                <viewController id="ho7-1w-J7f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8px-rd-EgK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amy Robinson Music Hall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gD-TW-LRC">
+                                <rect key="frame" x="24" y="161" width="370" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TEV-WM-gAK">
+                                <rect key="frame" x="41" y="346" width="337" height="421"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The Amy Robertson Music Center was named after Class of 1921 Alumnus, Amy Robertson, who donated $600,000 of the $1.8 million essential for construction. Robertson graduated with a Bachelor’s in Music and was the seventh woman appointed to the Simpson Board of Trustees. Housed in the Amy Robertson Center is Simpson’s music department which originated as a Music Conservatory. While most colleges offer a Bachelor of Arts degree, Simpson has the unique ability to provide a Bachelor of Music degree. The Bachelor of Music program offers a more rigorous and diverse curriculum that musicians would normally receive at a Conservatory while also exposing students to a Liberal Arts Education. Construction on the southeast part of campus began on October 23, 1981 and the building was dedicated in May of 1983. The building houses the Lekburg Recital Hall, James W. Helen Wallace Commons, Anna Hubbell Light Court, an instrumental music center, and dozens of practice rooms.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Music.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NZ8-pN-aYW">
+                                <rect key="frame" x="89" y="210" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eOc-vu-8bV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="la8-VJ-kmg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UE4-94-I3D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4262.3188405797109" y="-1233.4821428571429"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="1wg-ha-wtU">
+            <objects>
+                <viewController id="yXQ-Yg-KoH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kJW-lU-vr1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carver Hall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="How-Jf-MCM">
+                                <rect key="frame" x="127" y="139" width="161" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oGX-3d-vMY">
+                                <rect key="frame" x="35" y="324" width="345" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The Carver Science Center was built in October of 1956, named after George Washington Carver, one of Simpson’s most famous alumni. Being the primary science center on campus, the building is home to Simpson’s Mathematics, Computer Science, Biology, Environmental Science, Chemistry, and Physics Departments. The science hall is filled with chemistry, biology, and computer labs, all of which have been freshly renovated. Carver Science Center is also home to Simpson’s largest classroom: Jordan Lecture Hall, which seats 120 students, an excellent testament to Simpson’s small classes and personalized education values. Within the walls of Carver Science Hall, there are also numerous bone and taxidermized animal displays. These gifts to the college are an excellent representation of Simpson’s partnerships and connections with Des Moines area and Iowa businesses.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Carver.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zda-Is-5R8">
+                                <rect key="frame" x="73" y="188" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TO6-yi-4Og"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="2rb-kS-Bdl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dX-AD-RAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.7971014492755" y="-585.26785714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l54-WG-otJ">
+            <objects>
+                <viewController id="lHH-ju-meR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VQw-W0-BMf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blank Performance Arts " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oi-uK-8pD">
+                                <rect key="frame" x="32" y="135" width="350" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWi-3c-tub">
+                                <rect key="frame" x="150" y="184" width="99" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oFX-yj-t7q">
+                                <rect key="frame" x="32" y="369" width="354" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The Blank Performance Arts Center or BPAC, as it is commonly called, is located on the western side of campus. The building was built in 1971 as a home for the Theater Arts Department and has since become an integral part of Simpson’s culture. It was named for Dr. A.H. and Mrs. Anna Blank who contributed financially to the project. In 2011, Graham Construction and SVPA Architects renovated the building whilst adding key offices, classrooms and a luxurious entry. Today, the center is used for a variety of purposes including, classrooms and meetings, along with hosting productions. The center houses many of Simpson’s own productions and also Des Moines Metropolitan Opera productions.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idd-NA-uZi">
+                                <rect key="frame" x="99" y="243" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BPacMain.png" translatesAutoresizingMaskIntoConstraints="NO" id="m6O-Tx-aOd">
+                                <rect key="frame" x="89" y="233" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pbS-aH-XBr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g8f-vS-Lif"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTw-4D-vra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289.8550724637685" y="-580.58035714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e6w-1Q-73g">
+            <objects>
+                <viewController id="weB-uR-cbt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2aj-io-Yky">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dunn Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGJ-HX-6aa">
+                                <rect key="frame" x="114" y="144" width="187" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4h-GM-Nxf">
+                                <rect key="frame" x="242" y="316" width="0.0" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-Cy-qWE">
+                                <rect key="frame" x="41" y="329" width="333" height="451"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Dunn Library was completed in 1964 and named after a Simpson alum, Rex A. Dunn. It provides students with a quiet workspace, a computer lab, and help on various research projects. Dunn has a plethora of books but also has a collection of DVDs, CDs, ebooks, and much more for students and faculty to access. You will find students studying for tests and working on homework throughout the day in Dunn Library, but it is also home to three classrooms and the majority of the teacher education program materials. There is an ample amount of seating in Dunn as there are comfy chairs and tables spread throughout so students can find a comfortable place to work on their studies. Since its completion in 1964 Dunn has been providing resources for students and faculty and will continue to do so in the future. </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DunnLibraryOutside.png" translatesAutoresizingMaskIntoConstraints="NO" id="WiZ-Ft-Mfh">
+                                <rect key="frame" x="87" y="193" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="anH-hs-W4G"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xik-NG-3Q3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUY-Lv-QON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2946.376811594203" y="-578.57142857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qpm-BX-YfD">
+            <objects>
+                <viewController id="tJG-Tj-MRa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="erO-o5-QyE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buxton Stadium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-AX-2Bg">
+                                <rect key="frame" x="92" y="144" width="231" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Buxton.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lYc-5D-ioX">
+                                <rect key="frame" x="92" y="193" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qlw-J1-JdJ">
+                                <rect key="frame" x="41" y="329" width="332" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">In 1998, the Simpson College football stadium was named Buxton Stadium in honor of William Buxton. The Buxton family had four generations of Simpson board members and have long resided in Warren County as financiers and farmers. The stadium hosts school sponsored sports like football, soccer, and track. It is also home however to intramural competitions for Simpson students. The football field has undergone several renovations to become what it is today and boasts a state-of-the-art turf field.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2RZ-3I-A5b"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eSz-BY-PwS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJ7-eg-aA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3597.1014492753625" y="-575.22321428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y6c-Gd-7TU">
+            <objects>
+                <viewController id="Dc2-l9-frK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mc4-5D-sr0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hillman Hall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA7-Dv-B9L">
+                                <rect key="frame" x="121" y="146" width="173" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3tk-nM-rvM">
+                                <rect key="frame" x="59" y="331" width="296" height="367"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Built in 1920, Hillman Hall was originally known as Central Building and had classrooms and administrative offices. In 1961, Central Building was renamed as Hillman Hall in honor Simpson’s longest serving president, John L. Hillman who was president of the college from 1919-1936. During his time, Dr. Hillman was responsible for a $1,000,000 endowment fund and expanded Simpson College onto the surrounding land that much of our campus is on today. Nearly 100 years later, the building now holds the offices of the President, Academic Dean, Human Resources, Business, Marketing and Public Relations, Registrar, College Advancement and Alumni Relations. </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-11-24 at 1.22.52 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-Gc-iCM">
+                                <rect key="frame" x="87" y="195" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1q4-y4-VbV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ajx-Ks-5ab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdu-bq-O1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4242.0289855072469" y="-575.22321428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B8Z-wd-RhE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xh9-TB-sFC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9MS-fc-1da">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.58113139869999997" green="0.094097621739999998" blue="0.1489943564" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.90479278559999998" green="0.74992960689999999" blue="0.1408096254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X4Y-HF-LbG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ul7-zg-BYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521.73913043478262" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BPacMain.png" width="343.67999267578125" height="208.80000305175781"/>
+        <image name="Buxton.jpg" width="570" height="283"/>
+        <image name="Carver.png" width="598" height="469"/>
+        <image name="College Hall.jpg" width="768" height="662"/>
+        <image name="Cowles.jpeg" width="308" height="163"/>
+        <image name="DunnLibraryOutside.png" width="223.67999267578125" height="148.80000305175781"/>
+        <image name="Hillman.png" width="300" height="199.67999267578125"/>
+        <image name="Iowa History Center" width="630" height="148"/>
+        <image name="Kent.jpg" width="1440" height="400"/>
+        <image name="Mcneill.jpeg" width="200" height="200"/>
+        <image name="MerryBerry.jpg" width="72" height="72"/>
+        <image name="Music.jpg" width="300" height="200"/>
+        <image name="Pfeiffer.jpg" width="1440" height="732"/>
+        <image name="Screen Shot 2019-11-24 at 1.22.52 PM.png" width="595" height="395"/>
+        <image name="Simpson Logo" width="1272" height="644"/>
+        <image name="Smith Chapel.jpeg" width="300" height="168"/>
+        <image name="Wallace.jpg" width="216" height="143.75999450683594"/>
+        <image name="help-circle" width="24" height="24"/>
+        <image name="info_picture.png" width="937" height="309"/>
+        <image name="information" width="24" height="24"/>
+        <image name="map-search" width="18" height="18"/>
+        <image name="view-list" width="16" height="16"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mKt-GR-qBB"/>
+    </inferredMetricsTieBreakers>
+</document>

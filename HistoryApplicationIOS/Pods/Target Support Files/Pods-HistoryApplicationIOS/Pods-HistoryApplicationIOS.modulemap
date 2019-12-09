@@ -1,0 +1,6 @@
+framework module Pods_HistoryApplicationIOS {
+  umbrella header "Pods-HistoryApplicationIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
